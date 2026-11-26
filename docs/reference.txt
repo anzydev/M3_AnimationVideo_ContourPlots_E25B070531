@@ -1,0 +1,59 @@
+REFERENCE.TXT — MATHEMATICAL TOPIC AND NON-NEGOTIABLE FACTS
+==========================================================
+Project: Animated educational video about "Contour Plots — Finding the Global Minimum".
+Audience: undergraduate mathematics/computer-science students.
+Purpose: Explain a scalar height function, its level/contour curves, and a rigorous proof of a unique global minimum.
+
+IMPORTANT:
+The video must use the mathematics below and follow the ACTUAL meaning and order of the student's voice recording. This file supplies factual guidance, NOT a timestamped transcript of what the student said. If a word in the recording is mispronounced or accidentally wrong, see prompt.txt for how to handle it.
+
+CORE IDEAS
+1. A scalar function f(x,y) maps a position (x,y) to a scalar value z. Visualize the value as height.
+2. The 3D surface z=f(x,y) can be intersected with a horizontal plane z=c.
+3. Projecting the intersection onto the xy-plane gives a level curve (contour): all positions where f(x,y)=c.
+4. For the worked example use exactly:
+     f(x,y) = (x - 1)^2 + (y + 2)^2.
+   A contour at height c obeys:
+     (x - 1)^2 + (y + 2)^2 = c.
+   This is a circle centered on (1,-2) with radius r=sqrt(c) for c>0.
+   For c=0 it is a single point (1,-2).
+   For c<0 the level set is empty over real numbers.
+5. Verified contour examples:
+     c=1 -> radius 1
+     c=4 -> radius 2
+     c=9 -> radius 3
+   These are levels, not circle radii; a common mistake is treating c itself as the radius.
+6. Along y=-2:
+     f(1,-2)=0
+     f(2,-2)=1
+     f(3,-2)=4
+     f(4,-2)=9
+7. Partial derivatives:
+     ∂f/∂x = 2(x-1)
+     ∂f/∂y = 2(y+2).
+   Both vanish uniquely at (1,-2).
+8. A zero gradient ALONE does not establish a global minimum. Counterexample:
+     g(x,y)=x^2-y^2.
+   At (0,0), ∇g=0, but this is a saddle (in the x direction values rise; in the y direction values fall).
+9. Global-minimum proof:
+     (x-1)^2 >= 0 and (y+2)^2 >= 0 for all real x,y.
+     Therefore f(x,y)>=0 everywhere in R^2.
+     At (1,-2), f=0 and both squares vanish.
+     Hence the unique global/absolute minimum value is 0 at (1,-2).
+10. Difference:
+     Local minimum: lower than or equal to nearby values.
+     Global minimum: lower than or equal to ALL values in the domain.
+
+VISUAL/TEACHING ACCURACY
+- A contour is a set of equal-height points. Different level values need not be equally spaced physically.
+- When drawing the worked example, center MUST be (1,-2), not (0,0).
+- Make coordinates, radius, c labels, inequalities, and the saddle-versus-minimum distinction visually unambiguous.
+- Real 3D bowl illustrations may have scaled vertical axes for camera readability; if so, preserve honest labels and note the scaling in the source documentation.
+- Explain mathematical symbols clearly using the student's actual narration and consistent visuals. Never invent a theorem to fill a voiceover pause.
+- If the speaker makes a mathematically incorrect statement due to a slip, do not repeat it in on-screen text. Do not make the visual contradict the spoken sentence without documenting the discrepancy; flag it for review, and use an unambiguous demonstration of the actual math.
+
+VIDEO CONTENT BOUNDARIES
+- All explanatory speech must come from the supplied REAL recorded voice. No animator/character/AI narrator speaks.
+- Original silent animated characters, moving diagrams, geometry, camera motion, and nonverbal sound effects are allowed.
+- Avoid copied artwork, unlicensed media, or copied recognizable characters.
+- Any course-specific requirements provided separately must be followed. Do not invent a rubric.

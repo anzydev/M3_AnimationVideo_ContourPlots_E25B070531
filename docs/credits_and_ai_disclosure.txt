@@ -1,0 +1,48 @@
+CREDITS, ASSET LICENSES & AI DISCLOSURE
+======================================
+Project: The Lowest Point — Contour Plots: Finding the Global Minimum
+Course Context: Student Educational Math Video
+Student / Narrator: Khushagra Rawal (URN: E25B070531, Batch: Hopper-Debugger)
+
+1. HUMAN VOICEOVER & ORIGINAL SOURCE
+------------------------------------
+- Spoken Narration: Khushagra Rawal (100% authentic human voice recording from
+  `2026-11-26 18-48-11.mp4` / lossless stream copy `voiceover_master.m4a`).
+- No voice cloning, TTS synthesis, AI voice replacement, or character dialogue
+  was used anywhere in the video.
+
+2. VISUALS, 3D SCENES, CHARACTER & ANIMATION
+--------------------------------------------
+- All 3D mathematical surfaces, custom GLSL contour/slice shaders, translucent
+  glass plane, articulated survey explorer character ("Pip"), 2D vector diagrams,
+  and motion choreography were authored specifically for this project in
+  `project/renderer/`.
+- No third-party character rigs, stock footage, or copied creator templates
+  were used.
+
+3. SOUND DESIGN & MUSIC
+-----------------------
+- Original ambient harmonic score and subtle nonverbal mathematical chimes
+  were procedurally synthesized in Python/NumPy/SciPy (`project/build_audio.py`)
+  with speech-envelope ducking so the student's narration remains primary.
+- Zero copyrighted or third-party music tracks were used.
+
+4. OPEN-SOURCE LIBRARIES & TOOLS USED
+-------------------------------------
+- Three.js (MIT License) — WebGL2 3D rendering engine.
+- KaTeX (MIT License) — Mathematical equation typesetting.
+- Playwright & Google Chrome (Apache 2.0 / Chromium) — Deterministic 1080p frame rendering.
+- FFmpeg (LGPL/GPL) — Lossless audio/video muxing and verification.
+- faster-whisper (MIT License) — Speech transcription and word-level timestamp alignment.
+- Python, NumPy, SciPy, SoundFile — Audio analysis, ducking, and synthesis.
+
+5. AI ASSISTANCE DISCLOSURE
+---------------------------
+- Antigravity (Google DeepMind) served as the AI coding and animation
+  assistant for speech transcription & word/letter timestamp alignment,
+  discrepancy auditing, storyboard synchronization, WebGL2/Three.js + GLSL
+  shader & KaTeX animation code, silent Pip character rigging, kinetic intro
+  & silent end-credits rendering, procedural ambient audio synthesis, and
+  automated QA checks, under the specifications in `prompt.txt` and
+  `reference.txt`.
+

@@ -1,0 +1,12 @@
+audio_time,actual_spoken_heard,intended_wording,mathematical_impact,how_film_handles_it,unresolved_issues_or_pickup
+00:02.2 - 00:03.0,complete flat map,completely flat map,None (grammatical),Display 2D flat coordinate map cleanly,None
+00:32.6 - 00:33.3,contour plots became powerful,contour plots become powerful,None (tense slip),Reveal glowing contour grid over map,None
+00:54.3 - 00:55.5,lifting the map into three directions,lifting the map into three dimensions,Low-Medium (spatial terminology slip),"Visually lift map along explicit orthogonal X, Y, Z (3D) axes labeled '3D Space (x, y, z)'",None (clear visually; optional pickup only if strict oral precision required)
+01:08.1 - 01:10.3,Let's build with an actual equation,Let's build one with an actual equation,None (omitted 'one'),"Bring in worked function f(x,y) = (x-1)^2 + (y+2)^2",None
+01:54.4 - 01:55.4,Our equations becomes,Our equation becomes,None (plural/singular slip),Show single equation (x-1)^2 + (y+2)^2 = c,None
+02:54.8 - 02:55.7,"When c is 1, the radii is 1","When c is 1, the radius is 1",None (plural/singular slip),Draw circle c=1 with labeled radius r=1,None
+03:08.5 - 03:09.0,the radius doesn't glow [globe] by the same amount,the radius doesn't grow by the same amount,Low (phonetic slip 'glow/globe' for 'grow'),"Animate radius bar growing sublinearly (1, 2, 3) vs height jumps (1, 4, 9)",None
+03:16.2 - 03:17.5,rather than simply asking c as the radius,rather than simply using c as the radius,Medium (wrong verb 'asking' for 'using'),Show explicit visual comparison: 'Mistake: r = c' crossed out vs 'Actual: r = sqrt(c)',None (visual contrast eliminates ambiguity)
+04:16.8 - 04:17.5,falling in anazher [another],falling in another,None (minor articulation stumble),Hold saddle surface camera orbiting falling valley direction,None
+04:39.4 - 04:40.2,That proves [slurred: sounds like 'at two'] something stronger,That proves something stronger,Low (slurred transition),Display 'PROVED: Global Minimum' seal cleanly as phrase lands,None
+05:06.2 - 05:08.1,and the proof tells even if truly reach the bottom,and the proof tells us when we've truly reached the bottom,Low (slurred words 'us when we've'),"Show checkmark 'Proof -> Bottom Reached: f(1,-2) = 0' synchronized to phrase",Optional minor clarity pickup for 05:05-05:09 only if desired; mathematically unambiguous on screen

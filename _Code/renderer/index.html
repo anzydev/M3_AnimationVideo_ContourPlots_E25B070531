@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Lowest Point — Contour Plots</title>
+  <link rel="stylesheet" href="./node_modules/katex/dist/katex.min.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: transparent;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #f4f7fb;
+      -webkit-font-smoothing: antialiased;
+    }
+    #stage {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+    }
+    #gl-canvas, #hud-canvas {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+      display: block;
+    }
+    #hud-canvas { pointer-events: none; z-index: 2; }
+    #math-dom {
+      position: absolute;
+      inset: 0;
+      width: 1920px;
+      height: 1080px;
+      pointer-events: none;
+      z-index: 3;
+    }
+    .glass-card {
+      position: absolute;
+      background: rgba(10, 17, 32, 0.80);
+      border: 1.5px solid rgba(110, 215, 255, 0.34);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+      padding: 18px 26px;
+      color: #eef5ff;
+    }
+    .gold-card {
+      background: rgba(18, 16, 12, 0.86);
+      border: 1.5px solid rgba(255, 200, 90, 0.55);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.58), 0 0 28px rgba(255, 190, 60, 0.14);
+    }
+    .warn-card {
+      background: rgba(30, 12, 16, 0.86);
+      border: 1.5px solid rgba(255, 105, 115, 0.58);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.58), 0 0 28px rgba(255, 90, 100, 0.16);
+    }
+    .eyebrow {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 2.2px;
+      text-transform: uppercase;
+      color: #6ee7ff;
+      margin-bottom: 8px;
+    }
+    .gold-eyebrow { color: #ffd166; }
+    .warn-eyebrow { color: #ff7b89; }
+    .katex { font-size: 1.12em; }
+    .eq-lg { font-size: 36px; line-height: 1.35; }
+    .eq-md { font-size: 28px; line-height: 1.35; }
+    .eq-sm { font-size: 22px; line-height: 1.35; }
+    .subnote {
+      margin-top: 8px;
+      font-size: 19px;
+      line-height: 1.38;
+      color: #c7d6ec;
+    }
+    .pill-tag {
+      position: absolute;
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 18px;
+      font-weight: 600;
+      background: rgba(9, 15, 28, 0.88);
+      border: 1.5px solid rgba(110, 215, 255, 0.48);
+      color: #f3f8ff;
+      white-space: nowrap;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+    }
+    .title-banner {
+      position: absolute;
+      left: 56px;
+      top: 46px;
+      padding: 22px 30px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(11, 19, 36, 0.90), rgba(16, 28, 50, 0.78));
+      border: 1.5px solid rgba(255, 209, 102, 0.45);
+      box-shadow: 0 22px 54px rgba(0,0,0,0.58);
+      max-width: 780px;
+    }
+    .title-kicker {
+      font-size: 15px;
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffd166;
+      margin-bottom: 6px;
+    }
+    .title-main {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      line-height: 1.15;
+      color: #ffffff;
+    }
+    .title-sub {
+      margin-top: 10px;
+      font-size: 19px;
+      font-weight: 500;
+      color: #9ec5f8;
+    }
+    .end-card {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at 50% 45%, rgba(16, 30, 58, 0.84), rgba(6, 10, 19, 0.95));
+      text-align: center;
+      padding: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div id="stage">
+    <canvas id="gl-canvas" width="1920" height="1080"></canvas>
+    <canvas id="hud-canvas" width="1920" height="1080"></canvas>
+    <canvas id="comp-canvas" width="1920" height="1080" style="position:absolute;inset:0;width:1920px;height:1080px;display:none;"></canvas>
+    <div id="math-dom"></div>
+  </div>
+  <script src="./node_modules/katex/dist/katex.min.js"></script>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
+

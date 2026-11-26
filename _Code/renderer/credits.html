@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Credits &amp; Disclosure — The Lowest Point</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      background: #060b16;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #f4f7fb;
+      -webkit-font-smoothing: antialiased;
+    }
+    #stage { position: relative; width: 1920px; height: 1080px; }
+    canvas { position: absolute; inset: 0; width: 1920px; height: 1080px; display: block; }
+  </style>
+</head>
+<body>
+  <div id="stage">
+    <canvas id="c" width="1920" height="1080"></canvas>
+  </div>
+  <script type="module" src="./credits_main.js"></script>
+</body>
+</html>
+

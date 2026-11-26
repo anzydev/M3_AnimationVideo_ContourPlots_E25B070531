@@ -1,0 +1,207 @@
+1
+00:00:00,580 --> 00:00:03,360
+Hello everyone, myself Khushagra Rawal.
+
+2
+00:00:03,780 --> 00:00:06,450
+I belong to Hopper Debugger Batch.
+
+3
+00:00:07,080 --> 00:00:13,300
+My URN is E 2 5 B 0 7 0 5 3 1.
+
+4
+00:00:13,700 --> 00:00:16,260
+And I would like to present you my maths project.
+
+5
+00:00:17,647 --> 00:00:23,867
+Imagine you are standing on a complete flat map, there are roads, coordinates and a tiny
+
+6
+00:00:23,867 --> 00:00:29,707
+dot marking your position but there is one thing the map doesn't tell you, how high
+
+7
+00:00:29,707 --> 00:00:30,747
+the ground is.
+
+8
+00:00:31,367 --> 00:00:36,787
+Now suppose I give you a challenge, somewhere on this map is the lowest possible point,
+
+9
+00:00:37,367 --> 00:00:44,607
+you can move left, right, forward or backward but without seeing height, how would you
+
+10
+00:00:44,607 --> 00:00:52,107
+know which direction leads downhill. This is where contour plots became powerful. Start
+
+11
+00:00:52,107 --> 00:00:57,927
+with a function of two variables. Instead of giving the function one number, we give
+
+12
+00:00:57,927 --> 00:01:06,587
+it two, x and y. It returns a number we call z. Representing height, so every position
+
+13
+00:01:06,587 --> 00:01:13,887
+on the map now has an elevation. Imagine lifting the map into three directions [dimensions]. Some
+
+14
+00:01:13,887 --> 00:01:21,147
+places rise into hills, others sink into valleys. From the side, this landscape makes sense.
+
+15
+00:01:21,927 --> 00:01:29,227
+But what if we need to show all that information on a flat sheet of paper? We slice the landscape
+
+16
+00:01:29,227 --> 00:01:35,547
+with a horizontal plane. Think of slowly lowering a perfectly level sheet of glass through
+
+17
+00:01:35,547 --> 00:01:41,067
+the surface. Wherever the sheet touches the landscape, those points have exactly the
+
+18
+00:01:41,067 --> 00:01:48,347
+same height. Look straight down at the intersection. What you see is a contour line. A line joining
+
+19
+00:01:48,347 --> 00:01:54,967
+locations where the function has one constant value. Lower the sheet again and you can get
+
+20
+00:01:54,967 --> 00:02:01,627
+another contour. Each line tells you a different height. That is how a two dimensional map
+
+21
+00:02:02,167 --> 00:02:09,787
+can describe a three dimensional world. Let's build with an actual equation. Our function
+
+22
+00:02:09,787 --> 00:02:18,007
+is f of x and y equals the quantity x minus 1 squared plus the quantity y plus 2 squared.
+
+23
+00:02:18,667 --> 00:02:25,907
+It might look intimidating but notice something familiar. It's built from two square distances.
+
+24
+00:02:26,747 --> 00:02:32,347
+The first measures how far x is from 1. The second measures how far y is from negative
+
+25
+00:02:32,347 --> 00:02:40,627
+That tells us the center of this landscape is at the point 1, negative 2, not at 0, 0.
+
+26
+00:02:41,307 --> 00:02:49,287
+So now you choose a fixed height which we will call C. To draw its contour, we set the
+
+27
+00:02:49,287 --> 00:02:57,307
+equation equal to C. Our equation becomes the quantity x minus 1 squared plus the quantity
+
+28
+00:02:57,307 --> 00:03:05,227
+y plus 2 squared equals c. This is the equation of the circle, centered at 1, negative 2.
+
+29
+00:03:05,747 --> 00:03:13,907
+The radius is the square root of c. So let's test it. When c is 1, the radius is 1. When
+
+30
+00:03:13,907 --> 00:03:21,747
+c is 4, the radius is 2. And when c is 9, the radius is 3. 3 different heights, 3 different
+
+31
+00:03:21,747 --> 00:03:28,767
+circles one common center. Notice that the radius doesn't glow [grow] by the same amount as
+
+32
+00:03:28,767 --> 00:03:34,647
+the height. That's why we calculate the square root rather than simply asking [using] c as the radius.
+
+33
+00:03:35,767 --> 00:03:40,927
+There is another interesting detail. If c = 0, the circle shrinks to a single point
+
+34
+00:03:40,927 --> 00:03:48,507
+1, negative 2. And if c < 0, there is no contour at all. Two square numbers can
+
+35
+00:03:48,507 --> 00:03:54,067
+never add up to something negative. So looking at the rings, we might guess that the center
+
+36
+00:03:54,067 --> 00:03:58,707
+is the lowest point. But in mathematics, a picture is evidence not proof.
+
+37
+00:03:59,407 --> 00:04:04,847
+Let's check using partial derivatives. The partial derivative with respect to x is 2 times
+
+38
+00:04:04,847 --> 00:04:11,327
+the quantity x minus 1. The partial derivative with respect to y is 2 times the quantity y plus
+
+39
+00:04:11,327 --> 00:04:19,047
+2. Set both equal to 0. The first tells x equals 1. The second tells us y equals negative
+
+40
+00:04:19,047 --> 00:04:25,627
+2. So the gradient becomes 0 at 1, negative 2. Does that automatically make it a minimum?
+
+41
+00:04:26,507 --> 00:04:32,407
+Not always. A saddle shaped surface can have a zero gradient at its center while rising
+
+42
+00:04:32,407 --> 00:04:38,027
+in one direction and falling in another. We need one more argument. Look at the original
+
+43
+00:04:38,027 --> 00:04:43,807
+function. It's the sum of two squares and the square of any real number is never negative.
+
+44
+00:04:44,527 --> 00:04:52,167
+Therefore, our function can never go below zero at one negative two, both squares are exactly zero.
+
+45
+00:04:52,627 --> 00:04:58,007
+So the function actually reaches that lowest possible value That proves something stronger than
+
+46
+00:04:58,007 --> 00:05:04,467
+a local minimum. It is the unique global minimum height zero at one negative two.
+
+47
+00:05:04,467 --> 00:05:07,267
+That's the real power of contour plots.
+
+48
+00:05:07,947 --> 00:05:13,867
+They let us see a hidden landscape from above, compare heights without leaving two dimensions
+
+49
+00:05:14,427 --> 00:05:17,467
+and spot where interesting points might lie.
+
+50
+00:05:18,147 --> 00:05:24,467
+The contour help us discover, the calculation helps us verify and the proof tells when we've
+
+51
+00:05:25,147 --> 00:05:26,587
+truly reach the bottom.
+
+52
+00:05:27,347 --> 00:05:28,167
+Thank you for watching.

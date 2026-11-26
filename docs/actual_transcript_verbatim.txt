@@ -1,0 +1,52 @@
+ACTUAL VERBATIM TRANSCRIPT (AUDITED AGAINST voiceover_master.m4a / voiceover_alignment_16k.wav)
+===============================================================================================
+Legend: [sic: ...] marks audible slips/stammers; [unclear: ...] marks slurred words.
+
+[000.58 -> 006.80] Imagine you are standing on a complete flat map, there are roads, coordinates and a tiny
+[006.80 -> 012.64] dot marking your position but there is one thing the map doesn't tell you, how high
+[012.64 -> 013.68] the ground is.
+[014.30 -> 019.72] Now suppose I give you a challenge, somewhere on this map is the lowest possible point,
+[020.30 -> 027.54] you can move left, right, forward or backward but without seeing height, how would you
+[027.54 -> 035.04] know which direction leads downhill. This is where contour plots became powerful. Start
+[035.04 -> 040.86] with a function of two variables. Instead of giving the function one number, we give
+[040.86 -> 049.52] it two, x and y. It returns a number we call z. Representing height, so every position
+[049.52 -> 056.82] on the map now has an elevation. Imagine lifting the map into three directions [sic: intended 'dimensions']. Some
+[056.82 -> 064.08] places rise into hills, others sink into valleys. From the side, this landscape makes sense.
+[064.86 -> 072.16] But what if we need to show all that information on a flat sheet of paper? We slice the landscape
+[072.16 -> 078.48] with a horizontal plane. Think of slowly lowering a perfectly level sheet of glass through
+[078.48 -> 084.00] the surface. Wherever the sheet touches the landscape, those points have exactly the
+[084.00 -> 091.28] same height. Look straight down at the intersection. What you see is a contour line. A line joining
+[091.28 -> 097.90] locations where the function has one constant value. Lower the sheet again and you can get
+[097.90 -> 104.56] another contour. Each line tells you a different height. That is how a two dimensional map
+[105.10 -> 112.72] can describe a three dimensional world. Let's build with an actual equation. Our function
+[112.72 -> 120.94] is f of x and y equals the quantity x minus 1 squared plus the quantity y plus 2 squared.
+[121.60 -> 128.84] It might look intimidating but notice something familiar. It's built from two square distances.
+[129.68 -> 135.28] The first measures how far x is from 1. The second measures how far y is from negative
+[135.28 -> 143.56] That tells us the center of this landscape is at the point 1, negative 2, not at 0, 0.
+[144.24 -> 152.22] So now you choose a fixed height which we will call C. To draw its contour, we set the
+[152.22 -> 160.24] equation equal to C. Our equation becomes the quantity x minus 1 squared plus the quantity
+[160.24 -> 168.16] y plus 2 squared equals c. This is the equation of the circle, centered at 1, negative 2.
+[168.68 -> 176.84] The radius is the square root of c. So let's test it. When c is 1, the radius is 1. When
+[176.84 -> 184.68] c is 4, the radius is 2. And when c is 9, the radius is 3. 3 different heights, 3 different
+[184.68 -> 191.70] circles one common center. Notice that the radius doesn't glow/globe [sic: 'grow'] by the same amount as
+[191.70 -> 197.58] the height. That's why we calculate the square root rather than simply asking [sic: 'using'] c as the radius.
+[198.70 -> 203.86] There is another interesting detail. If C is 0, the circle shrinks to a single point
+[203.86 -> 211.44] 1, negative 2. And if C is negative, there is no contour at all. Two square numbers can
+[211.44 -> 217.00] never add up to something negative. So looking at the rings, we might guess that the center
+[217.00 -> 221.64] is the lowest point. But in mathematics, a picture is evidence not proof.
+[222.34 -> 227.78] Let's check using partial derivatives. The partial derivative with respect to x is 2 times
+[227.78 -> 234.26] the quantity x minus 1. The partial derivative with respect to y is 2 times the quantity y plus
+[234.26 -> 241.98] 2. Set both equal to 0. The first tells x equals 1. The second tells us y equals negative
+[241.98 -> 248.56] 2. So the gradient becomes 0 at 1, negative 2. Does that automatically make it a minimum?
+[249.44 -> 255.34] Not always. A saddle shaped surface can have a zero gradient at its center while rising
+[255.34 -> 260.96] in one direction and falling in another. We need one more argument. Look at the original
+[260.96 -> 266.74] function. It's the sum of two squares and the square of any real number is never negative.
+[267.46 -> 275.10] Therefore, our function can never go below zero at one negative two, both squares are exactly zero.
+[275.56 -> 280.94] So the function actually reaches that lowest possible value [unclear: 'That proves', sounds like 'at two'] something stronger than
+[280.94 -> 287.40] a local minimum. It is the unique global minimum height zero at one negative two.
+[287.40 -> 290.20] That's the real power of contour plots.
+[290.88 -> 296.80] They let us see a hidden landscape from above, compare heights without leaving two dimensions
+[297.36 -> 300.40] and spot where interesting points might lie.
+[301.08 -> 307.40] The contour help us discover, the calculation helps us verify and the proof tells [unclear: 'even if / when we've']
+[308.08 -> 309.52] truly reach the bottom.
+[310.28 -> 311.10] Thank you for watching.
